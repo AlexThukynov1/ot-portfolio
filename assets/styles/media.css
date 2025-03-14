@@ -1,0 +1,7 @@
+@import url("./variablles.css");
+@media screen and (min-width: 1150px) {
+    :root {
+        --max-font-size: 5.5rem;
+        --big-font-size:2.75rem;
+    }
+}

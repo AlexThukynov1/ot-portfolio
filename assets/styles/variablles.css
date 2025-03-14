@@ -1,0 +1,28 @@
+* {
+    --hue: 230;
+    --first-color: hsl(var(--hue), 55%, 55%);
+    --first-color-light: hsl(var(--hue), 55%, 65%);
+    --first-color-alt: hsl(var(--hue), 50%, 50%);
+    --title-color: hsl(var(--hue), 30%, 95%);
+    --text-color: hsl(var(--hue), 20%, 80%);
+    --text-color-light: hsl(var(--hue), 20%, 70%);
+    --body-color: hsl(var(--hue), 40%, 16%);
+    --container-color: hsl(var(--hue), 40%, 20%);
+
+    --main-font: "Ubuntu", sans-serif;
+    --max-font-size: 3rem;
+    --big-font-size: 1.5rem;
+    --title-font-size: 1.5rem;
+    --subtitle-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem; 
+
+    --font-normal: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --z-10: 10;
+    --z-100: 100;
+    
+}
