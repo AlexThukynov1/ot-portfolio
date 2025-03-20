@@ -39,13 +39,84 @@ table {
 }
 /* Reset default styles */
 
-.header {
-    font-family: var(--main-font);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--main-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var();
+  color: var(--text-color)
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-font-size);
+  font-weight: var(--font-bold);
+}
+
+p {
+  line-height: 130%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+
+/* CLasses for reuse */
+.container {
+  min-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--max-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+}
+
 .main {
-
+  overflow: hidden;
 }
-.footer {
-
-}
-
