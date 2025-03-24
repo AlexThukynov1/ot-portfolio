@@ -1,4 +1,5 @@
 * {
+    --header-height: 3.5rem;
     --hue: 230;
     --first-color: hsl(var(--hue), 55%, 55%);
     --first-color-light: hsl(var(--hue), 55%, 65%);

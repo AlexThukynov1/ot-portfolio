@@ -9,4 +9,25 @@
         --normal-font-size: 1.125rem;
         --small-font-size: 0.75rem; 
     }
+
 }
+@media screen and (max-width: 1150px) {
+    /* ============== HEADER ============== */
+    .container {
+        min-width: 100%;
+    }
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(var(--hue), 70%, 4%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 7rem 3rem;
+        transition: right .4s;
+    }
+}
+
+ 
