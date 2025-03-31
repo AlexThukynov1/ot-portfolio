@@ -190,6 +190,19 @@ img {
 .show-menu {
   right: 0;
 }
+
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(var(--hue), 70%, 4%, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 /* ============== HEADER ============== */
 
 /* ============== HOME ============== */
