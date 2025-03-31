@@ -14,7 +14,7 @@
 @media screen and (max-width: 1150px) {
     /* ============== HEADER ============== */
     .container {
-        min-width: 100%;
+        
     }
     .nav__menu {
         position: fixed;
