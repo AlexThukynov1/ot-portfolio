@@ -33,3 +33,30 @@ const blurHeader = () => {
 }
 
 window.addEventListener('scroll', blurHeader)
+
+
+// Email
+
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
+
+const sendEmail = (e) => {
+e.preventDefault();
+
+emailjs.sendForm('service_j67mtzg', 'template_6gmimri', '#contact-form', 'we8f6gwEkw7DSCt8p')
+    .then (() => {
+        contactMessage.textContent = 'Message sent successfully'
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+
+        contactForm.reset()
+    }, () => {
+        contactMessage.textContent = 'Message not sent (service error)'
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)

@@ -238,10 +238,10 @@
             <div class="contanct__container container grid">
                 <form action="" class="contact__form grid" id="contact-form">
                     <div class="contact__group grid">
-                        <input type="text" name="" placeholder="Names" required class="contact__input">
-                        <input type="email" name="" placeholder="Email" required class="contact__input">
+                        <input type="text" name="name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="email" placeholder="Email" required class="contact__input">
                     </div>
-                    <textarea name="" placeholder="Message" class="contact__input contact__area"></textarea>
+                    <textarea name="message" placeholder="Message" class="contact__input contact__area"></textarea>
                     <button type="submit" class="button contact__button">Send Message</button>
                     <p class="contact__message" id="contact-message">Message</p>
                 </form>
@@ -269,7 +269,7 @@
 
         <!-- ===================== SCRIPTS ===================== -->
     <script src=""></script>
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/scripts/index.js"></script>
 </body>
 </html>
