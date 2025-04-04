@@ -27,9 +27,9 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 425px) {
     .container {
-        margin-inline: 1 rem
+        margin-inline: 1.25rem;
     }
     .skills__content {
         grid-template-columns: repeat(2, max-content);
