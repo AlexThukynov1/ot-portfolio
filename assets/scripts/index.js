@@ -60,3 +60,12 @@ emailjs.sendForm('service_j67mtzg', 'template_6gmimri', '#contact-form', 'we8f6g
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up');
+
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') 
+                        : scrollUp.classList.remove('show-scroll');
+}
+
+window.addEventListener('scroll', scrollUp)
