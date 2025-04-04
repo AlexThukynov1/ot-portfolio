@@ -203,6 +203,12 @@ img {
   left: 0;
   z-index: -1;
 }
+.active-link {
+  color: var(--first-color-light)
+}
+.active-link::after {
+  width: 30%;
+}
 /* ============== HEADER ============== */
 
 /* ============== HOME ============== */

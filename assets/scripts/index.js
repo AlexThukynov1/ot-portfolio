@@ -64,8 +64,29 @@ contactForm.addEventListener('submit', sendEmail)
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
 
-    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') 
+    this.scrollY >= 700 ? scrollUp.classList.add('show-scroll') 
                         : scrollUp.classList.remove('show-scroll');
 }
 
 window.addEventListener('scroll', scrollUp)
+
+
+const section = document.querySelectorAll('section[id]')
+
+const scrollActive = () => {
+    const scrollDown = window.scrollY
+
+    section.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionId = current.getAttribute('id');
+        const sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+            sectionClass.classList.add('active-link')
+        }else {
+            sectionClass.classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
